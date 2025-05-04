@@ -48,32 +48,12 @@ p {
   margin: 0.5em 0;
 }
 
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-    transform: translateY(10px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-.content h1,
-.content p {
+.fade-1, .fade-2, .fade-3, .fade-4 {
   opacity: 0;
   animation: fadeIn 0.6s ease-in-out forwards;
 }
 
-.content h1 {
-  animation-delay: 0.2s;
-}
-.content p:nth-of-type(1) {
-  animation-delay: 1s;
-}
-.content p:nth-of-type(2) {
-  animation-delay: 1.8s;
-}
-.content p:nth-of-type(3) {
-  animation-delay: 2.6s;
-}
+.fade-1 { animation-delay: 0.2s; }
+.fade-2 { animation-delay: 1s; }
+.fade-3 { animation-delay: 1.8s; }
+.fade-4 { animation-delay: 2.6s; }

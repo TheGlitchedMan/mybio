@@ -62,3 +62,13 @@ p {
 .discord-tag:hover {
   background-color: #3b3e45;
 }
+
+.fade-1, .fade-2, .fade-3, .fade-4 {
+  opacity: 0;
+  animation: fadeIn 0.6s ease-in-out forwards;
+}
+
+.fade-1 { animation-delay: 0.2s; }
+.fade-2 { animation-delay: 1s; }
+.fade-3 { animation-delay: 1.8s; }
+.fade-4 { animation-delay: 2.6s; }

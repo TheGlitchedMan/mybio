@@ -3,24 +3,47 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>my bio</title>
+  <title>fumar's bio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code&display=swap" rel="stylesheet">
   <style>
     body {
       background-color: #121212;
-      color: #f0f0f0;
-      font-family: sans-serif;
-      max-width: 700px;
-      margin: auto;
+      color: #e0e0e0;
+      font-family: 'Fira Code', monospace;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      text-align: center;
       padding: 20px;
     }
     a {
-      color: #90caf9; /* soft blue for links */
+      color: #90caf9;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    .content {
+      max-width: 600px;
+    }
+    h1 {
+      color: #ffffff;
+      font-size: 1.8em;
+      margin-bottom: 0.5em;
+    }
+    p {
+      margin: 0.5em 0;
     }
   </style>
 </head>
 <body>
-  <h1>hey, i'm daniel or how ppl call me: fumar</h1>
-  <p>i'm just some random dude which likes python and linux, but i keep switching from linux to windows and it loops on</p>
-  <p>my github is <a href="https://github.com/TheGlitchedMan">"TheGlitchedMan"</a>.</p>
+  <div class="content">
+    <img class="avatar" src="https://i.pinimg.com/originals/a3/15/e0/a315e08fdd19719d0e8c5b3fdd21600d.webp" alt="avatar" />
+    <h1>hey, i'm daniel or how ppl call me: fumar</h1>
+    <p>i'm just some random dude which likes python and linux, but i keep switching from linux to windows and it loops on</p>
+    <p>my github is <a href="https://github.com/TheGlitchedMan" target="_blank">"TheGlitchedMan"</a>.</p>
+  </div>
 </body>
 </html>

@@ -1,4 +1,4 @@
-    <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
@@ -7,62 +7,66 @@
   <link href="https://fonts.googleapis.com/css2?family=Fira+Code&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
   <style>
-  .copied-tooltip {
-    visibility: hidden;
-    opacity: 0;
-    background: #2c2f33;
-    color: #7289da;
-    border-radius: 4px;
-    padding: 2px 6px;
-    font-size: 0.75em;
-    position: absolute;
-    transform: translateY(-150%);
-    transition: opacity 0.3s ease;
-  }
+    .copied-tooltip {
+      visibility: hidden;
+      opacity: 0;
+      background: #2c2f33;
+      color: #7289da;
+      border-radius: 4px;
+      padding: 2px 6px;
+      font-size: 0.75em;
+      position: absolute;
+      transform: translateY(-150%);
+      transition: opacity 0.3s ease;
+    }
 
-  .discord-tag-wrapper {
-    position: relative;
-    display: inline-block;
-  }
+    .discord-tag-wrapper {
+      position: relative;
+      display: inline-block;
+    }
 
-  .discord-tag-wrapper.show-tooltip .copied-tooltip {
-    visibility: visible;
-    opacity: 1;
-  }
-</style>
-    <script>
-  function copyDiscord() {
-    const wrapper = document.querySelector('.discord-tag-wrapper');
-    const tag = wrapper.querySelector('.discord-tag').innerText;
+    .discord-tag-wrapper.show-tooltip .copied-tooltip {
+      visibility: visible;
+      opacity: 1;
+    }
+  </style>
+  <script>
+    function copyDiscord() {
+      const wrapper = document.querySelector('.discord-tag-wrapper');
+      const tag = wrapper.querySelector('.discord-tag').innerText;
 
-    navigator.clipboard.writeText(tag).then(() => {
-      wrapper.classList.add('show-tooltip');
-      setTimeout(() => {
-        wrapper.classList.remove('show-tooltip');
-      }, 1000);
-    });
-  }
-</script>
+      navigator.clipboard.writeText(tag).then(() => {
+        wrapper.classList.add('show-tooltip');
+        setTimeout(() => {
+          wrapper.classList.remove('show-tooltip');
+        }, 1000);
+      });
+    }
+  </script>
 </head>
+
 <body>
   <div class="content">
-    <img class="avatar" src="https://i.pinimg.com/originals/a3/15/e0/a315e08fdd19719d0e8c5b3fdd21600d.webp" alt="avatar" />
+    <img class="avatar" src="https://i.pinimg.com/originals/a3/15/e0/a315e08fdd19719d0e8c5b3fdd21600d.webp"
+      alt="avatar" />
     <h1>hey, i'm daniel or how ppl call me: fumar</h1>
-    <p>i'm just some random dude which likes python and linux, but i keep switching from linux to windows and it loops on</p>
+    <p>i'm just some random dude which likes python and linux, but i keep switching from linux to windows and it loops
+      on</p>
     <p>my github is <a href="https://github.com/TheGlitchedMan" target="_blank">TheGlitchedMan</a>.</p>
     <p>my discord is
-    <span class="discord-tag-wrapper" onclick="copyDiscord()">
+      <span class="discord-tag-wrapper" onclick="copyDiscord()">
         <span class="discord-tag">tzuris.exe</span>
         <span class="copied-tooltip">copied!</span>
       </span>
     </p>
-    <p style="margin: 20px 0;"> </p> 
-    <p>currently working on: <span class="tag" style="color: #61a6fa">UG's Interactive [ <span style="color: #ad6eff">Quality Assurance Manager</span> ]</span>.</p> 
+    <p style="margin: 20px 0;"> </p>
+    <p>currently working on: <span class="tag" style="color: #61a6fa">UG's Interactive [ <span
+          style="color: #ad6eff">Quality Assurance Manager</span> ]</span>.</p>
   </div>
-    <p>helpful resources (before dm'ing me read these):</p>
-        <ul style="list-style: none; padding: 0;">
-  <li><a href="https://dontasktoask.com/" target="_blank">don't ask to ask</a></li>
-  <li><a href="https://nohello.net/" target="_blank">no hello</a></li>
-</ul>
+  <p>helpful resources (before dm'ing me read these):</p>
+  <ul style="list-style: none; padding: 0;">
+    <li><a href="https://dontasktoask.com/" target="_blank">don't ask to ask</a></li>
+    <li><a href="https://nohello.net/" target="_blank">no hello</a></li>
+  </ul>
 </body>
 </html>

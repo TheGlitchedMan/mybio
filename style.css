@@ -38,8 +38,15 @@ a:hover {
   border-radius: 12px;
   max-width: 600px;
   box-shadow: 0 0 20px rgba(0,0,0,0.6);
+  margin: 2em 0;
+  line-height: 1.6;
 }
-
+.text-block div {
+  margin: 6px 0;
+}
+.gap {
+  height: 1.5px;
+}
 h1 {
   color: #ffffff;
   font-size: 1.8em;
@@ -86,4 +93,27 @@ p {
 
 .tag:hover {
   background-color: #3b3e45;
+}
+
+.copied-tooltip {
+  visibility: hidden;
+  opacity: 0;
+  background: #2c2f33;
+  color: #7289da;
+  border-radius: 4px;
+  padding: 2px 6px;
+  font-size: 0.75em;
+  position: absolute;
+  transform: translateY(-150%);
+  transition: opacity 0.3s ease;
+}
+
+.discord-tag-wrapper {
+  position: relative;
+  display: inline-block;
+}
+
+.discord-tag-wrapper.show-tooltip .copied-tooltip {
+  visibility: visible;
+  opacity: 1;
 }

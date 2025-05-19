@@ -7,30 +7,6 @@
   <title>fumar's bio</title>
   <link href="https://fonts.googleapis.com/css2?family=Fira+Code&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
-  <style>
-    .copied-tooltip {
-      visibility: hidden;
-      opacity: 0;
-      background: #2c2f33;
-      color: #7289da;
-      border-radius: 4px;
-      padding: 2px 6px;
-      font-size: 0.75em;
-      position: absolute;
-      transform: translateY(-150%);
-      transition: opacity 0.3s ease;
-    }
-
-    .discord-tag-wrapper {
-      position: relative;
-      display: inline-block;
-    }
-
-    .discord-tag-wrapper.show-tooltip .copied-tooltip {
-      visibility: visible;
-      opacity: 1;
-    }
-  </style>
   <script>
     function copyDiscord() {
       const wrapper = document.querySelector('.discord-tag-wrapper');
@@ -52,25 +28,35 @@
       <img class="avatar" src="https://i.pinimg.com/originals/a3/15/e0/a315e08fdd19719d0e8c5b3fdd21600d.webp"
         alt="avatar" />
       <h1>hey, i'm daniel or how ppl call me: fumar</h1>
-      <p>i'm just some random dude which likes python and linux, but i keep switching from linux to windows and it loops
-        on</p>
-      <p>my github is <a href="https://github.com/TheGlitchedMan" target="_blank">TheGlitchedMan</a>.</p>
-      <p>my discord is
-        <span class="discord-tag-wrapper" onclick="copyDiscord()">
+
+      <p>
+        i'm just some random dude which likes python and linux,<br>
+        but i keep switching from linux to windows and it loops on
+      </p>
+      <div class="gap"></div>
+      <p>
+        my github is <a href="https://github.com/TheGlitchedMan">TheGlitchedMan</a><br>
+        my discord is <span class="discord-tag-wrapper" onclick="copyDiscord()">
           <span class="discord-tag">tzuris.exe</span>
           <span class="copied-tooltip">copied!</span>
         </span>
       </p>
-      <p style="margin: 20px 0;"> </p>
-      <p>helpful resources (before dm'ing me read these):</p>
-      <ul style="list-style: none; padding-left: 0; margin: 0;">
-        <li style="margin: 4px 0;"><a href="https://dontasktoask.com/" target="_blank">don't ask to ask</a></li>
-        <li style="margin: 4px 0;"><a href="https://nohello.net/" target="_blank">no hello</a></li>
-      </ul>
-
-      <p style="margin: 20px 0;"> </p>
-      <p>currently working on: <span class="tag" style="color: #61a6fa">UG's Interactive [ <span
-            style="color: #ad6eff">Quality Assurance Manager</span> ]</span>.</p>
+      <div class="gap"></div>
+      <p>
+        helpful resources (before dm'ing me read these):<br>
+        <a href="https://dontasktoask.com/">don't ask to ask</a><br>
+        <a href="https://nohello.net/">no hello</a>
+      </p>
+      <p>
+        currently working on:<br>
+        <span class="tag">UG's Interactive [ <span style="color: #ad6eff">Quality Assurance Manager</span> ]</span>
+      </p>
+      <div class="gap"></div>
+      <p>
+        my setup:<br>
+        ryzen 5 1600 + rx 570, 24gb ram<br>
+        windows + linux, dual boot (maybe)
+      </p>
     </div>
   </div>
 </body>
